@@ -8,11 +8,11 @@ const Header = () => {
         setDarkMode(!darkMode);
     };
     return(
-        <nav>
-            <div className='darkmodetoggle'>
+        <nav className='header'>
+            <h1>Top Searched Players</h1>
+            <div className='dark-mode__toggle'>
                 <div onClick={toggleMode}
-                className={darkMode ? 'toggle toggled' : 'toggle'}
-                />
+                className={darkMode ? 'toggle toggled' : 'toggle'}></div>
             </div>
         </nav>
     )
